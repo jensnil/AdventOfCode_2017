@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
     println(c1[0])
     println(c1[-1])
     println(c1[1])
+    println(c1[2])
 }
