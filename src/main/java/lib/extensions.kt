@@ -1,10 +1,11 @@
 package lib
 
 class CircularList<out T>(private val list: List<T>) : List<T> by list {
+    override fun toString(): String =
+            list.toString()
 
     override fun get(index: Int): T =
             list[index.safely()]
-
     // Other overrides removed for brevity.
 
     private fun Int.safely(): Int =
@@ -14,6 +15,8 @@ class CircularList<out T>(private val list: List<T>) : List<T> by list {
 }
 
 class MutableCircularList<T>(private val list: MutableList<T>) : MutableList<T> by list {
+    override fun toString(): String =
+            list.toString()
 
     override fun get(index: Int): T =
             list[index.safely()]
