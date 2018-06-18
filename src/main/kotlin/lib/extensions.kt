@@ -21,6 +21,11 @@ class MutableCircularList<T>(private val list: MutableList<T>) : MutableList<T> 
     override fun get(index: Int): T =
             list[index.safely()]
 
+    override fun set(index: Int, element: T): T {
+        list[index.safely()] = element
+        return element
+    }
+
     // Other overrides removed for brevity.
 
     private fun Int.safely(): Int =
@@ -32,10 +37,14 @@ class MutableCircularList<T>(private val list: MutableList<T>) : MutableList<T> 
 fun <T> List<T>.circular() : CircularList<T> = CircularList(this)
 fun <T> MutableList<T>.circular() : MutableList<T> = MutableCircularList(this)
 
+//Extensions
+
+fun <T : Comparable<T>> MutableList<T>.maxIndex(): Int? {
+    return this.indices.maxBy { this[it] } ?: null
+}
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
     val tmp = this[index1] // 'this' corresponds to the list
     this[index1] = this[index2]
     this[index2] = tmp
 }
-
