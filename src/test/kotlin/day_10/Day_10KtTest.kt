@@ -10,7 +10,7 @@ internal class Day_10KtTest {
     @org.junit.jupiter.api.Test
     fun part_two() {
         //println(part_two(get_map_2(), get_map_2_suffix(), 256, 64))
-        assert(part_two(get_map_2(), get_map_2_suffix(), 256, 64) == "44f4befb0f303c0bafd085f97741d51d")
+        assert(part_two(get_map_2(), 256, 64) == "44f4befb0f303c0bafd085f97741d51d")
     }
 
     fun get_map(): List<Int> {
@@ -21,6 +21,6 @@ internal class Day_10KtTest {
         return input_10.map { it.toByte() }
     }
     fun get_map_2_suffix(): List<Byte> {
-        return intArrayOf(17, 31, 73, 47, 23).map { it.toByte() }
+        return byteArrayOf(17, 31, 73, 47, 23).map { it.toByte() }
     }
 }
