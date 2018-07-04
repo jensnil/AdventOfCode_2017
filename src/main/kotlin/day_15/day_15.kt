@@ -1,10 +1,5 @@
 package day_15
 
-import lib.knothash
-import java.math.BigInteger
-
-val gridSize = 128
-
 fun part_one(factorA: Int, factorB: Int): Int {
     var matchCount = 0
     var generatorA : Long = factorA.toLong()
