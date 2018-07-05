@@ -26,7 +26,9 @@ class MutableCircularList<T>(private val list: MutableList<T>) : MutableList<T> 
         return element
     }
 
-    // Other overrides removed for brevity.
+    override fun add(index: Int, element: T) {
+        list.add(index.safely(), element)
+    }
 
     private fun Int.safely(): Int =
             if (this < 0) (this % size + size) % size
