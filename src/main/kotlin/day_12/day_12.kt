@@ -3,8 +3,7 @@ package day_12
 
 fun part_one(input: Map<Int,List<Int>>, start : Int): Int {
     var visitedNodes = mutableSetOf<Int>()
-    val remainingNodes = mutableSetOf<Int>(start)
-    var currentNode : Int
+    val remainingNodes = mutableSetOf(start)
     while (remainingNodes.isNotEmpty()) {
         var currentNode = remainingNodes.first()
         remainingNodes.remove(currentNode)
@@ -26,7 +25,7 @@ fun part_two(input: Map<Int,List<Int>>): Int {
     var groupCount = 0
     while (allRemainingNodes.isNotEmpty()) {
         var visitedNodes = mutableSetOf<Int>()
-        val remainingNodes = mutableSetOf<Int>(allRemainingNodes.first())
+        val remainingNodes = mutableSetOf(allRemainingNodes.first())
         while (remainingNodes.isNotEmpty()) {
             var currentNode = remainingNodes.first()
             remainingNodes.remove(currentNode)
