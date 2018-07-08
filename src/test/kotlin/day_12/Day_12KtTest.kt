@@ -21,7 +21,7 @@ internal class Day_12KtTest {
             var otherNodes = mutableListOf<Int>()
             nodes = nodes.next()
             while (nodes != null) {
-                otherNodes.add(nodes!!.value.toInt())
+                otherNodes.add(nodes.value.toInt())
                 nodes = nodes.next()
             }
             node to otherNodes

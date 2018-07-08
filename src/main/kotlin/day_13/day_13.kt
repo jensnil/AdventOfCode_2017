@@ -10,11 +10,11 @@ fun partOne(input: Map<Int,Int>): Int {
         if (input.containsKey(i) && state[i] == 0) {
             score += i * (input[i] ?: 0)
         }
-        input.forEach { i ->
-            if (state[i.key] == 0 || state[i.key] == i.value - 1) {
-                direction[i.key] *= -1
+        input.forEach { j ->
+            if (state[j.key] == 0 || state[j.key] == j.value - 1) {
+                direction[j.key] *= -1
             }
-            state[i.key] = (state[i.key] + direction[i.key])
+            state[j.key] = (state[j.key] + direction[j.key])
         }
     }
     return score

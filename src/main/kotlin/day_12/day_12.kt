@@ -3,8 +3,7 @@ package day_12
 
 fun partOne(input: Map<Int,List<Int>>, start : Int): Int {
     var visitedNodes = mutableSetOf<Int>()
-    val remainingNodes = mutableSetOf<Int>(start)
-    var currentNode : Int
+    val remainingNodes = mutableSetOf(start)
     while (remainingNodes.isNotEmpty()) {
         var currentNode = remainingNodes.first()
         remainingNodes.remove(currentNode)

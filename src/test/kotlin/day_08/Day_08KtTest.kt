@@ -18,11 +18,11 @@ internal class Day_08KtTest {
             //println(matchResult!!.groupValues[1])
             //println(matchResult!!.groupValues[2])
             Instruction(matchResult!!.groupValues[1],
-                    matchResult!!.groupValues[2],
-                    matchResult!!.groupValues[3].toInt(),
-                    matchResult!!.groupValues[4],
-                    matchResult!!.groupValues[5],
-                    matchResult!!.groupValues[6].toInt())
+                    matchResult.groupValues[2],
+                    matchResult.groupValues[3].toInt(),
+                    matchResult.groupValues[4],
+                    matchResult.groupValues[5],
+                    matchResult.groupValues[6].toInt())
         }
     }
 }
