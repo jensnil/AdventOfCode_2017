@@ -2,14 +2,14 @@ package day_05
 
 internal class Day_05KtTest {
     @org.junit.jupiter.api.Test
-    fun part_one() {
+    fun partOne() {
         val input = input_05.lines().map { it.toInt() }
-        assert(part_one(input) == 339351)
+        assert(partOne(input) == 339351)
     }
 
     @org.junit.jupiter.api.Test
-    fun part_two() {
+    fun partTwo() {
         val input = input_05.lines().map { it.toInt() }
-        assert(part_two(input) == 24315397)
+        assert(partTwo(input) == 24315397)
     }
 }

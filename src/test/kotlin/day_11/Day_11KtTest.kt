@@ -2,15 +2,15 @@ package day_11
 
 internal class Day_11KtTest {
     @org.junit.jupiter.api.Test
-    fun part_one() {
-        //println(part_one(get_map()))
-        assert(part_one(get_map()) == 794)
+    fun partOne() {
+        //println(partOne(get_map()))
+        assert(partOne(get_map()) == 794)
     }
 
     @org.junit.jupiter.api.Test
-    fun part_two() {
-        //println(part_two(get_map()))
-        assert(part_two(get_map()) == 1524)
+    fun partTwo() {
+        //println(partTwo(get_map()))
+        assert(partTwo(get_map()) == 1524)
     }
 
     fun get_map(): List<String> {

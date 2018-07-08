@@ -1,7 +1,7 @@
 package day_13
 
 
-fun part_one(input: Map<Int,Int>): Int {
+fun partOne(input: Map<Int,Int>): Int {
     var score = 0
     val maxLayer = (input.keys.max() ?: 0) + 1
     var state = IntArray(maxLayer)
@@ -22,7 +22,7 @@ fun part_one(input: Map<Int,Int>): Int {
 
 
 
-fun part_two(input: Map<Int,Int>): Int {
+fun partTwo(input: Map<Int,Int>): Int {
     val maxLayer = (input.keys.max() ?: 0) + 1
     var state = IntArray(maxLayer)
     var direction = IntArray(maxLayer) {-1}

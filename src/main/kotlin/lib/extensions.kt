@@ -40,7 +40,7 @@ fun <T> MutableList<T>.circular() : MutableList<T> = MutableCircularList(this)
 //Extensions
 
 fun <T : Comparable<T>> MutableList<T>.maxIndex(): Int? {
-    return this.indices.maxBy { this[it] } ?: null
+    return this.indices.maxBy { this[it] }
 }
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {

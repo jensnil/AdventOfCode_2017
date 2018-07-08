@@ -1,7 +1,7 @@
 package day_12
 
 
-fun part_one(input: Map<Int,List<Int>>, start : Int): Int {
+fun partOne(input: Map<Int,List<Int>>, start : Int): Int {
     var visitedNodes = mutableSetOf<Int>()
     val remainingNodes = mutableSetOf<Int>(start)
     var currentNode : Int
@@ -21,7 +21,7 @@ fun part_one(input: Map<Int,List<Int>>, start : Int): Int {
     return visitedNodes.size
 }
 
-fun part_two(input: Map<Int,List<Int>>): Int {
+fun partTwo(input: Map<Int,List<Int>>): Int {
     var allRemainingNodes = input.keys.toMutableSet()
     var groupCount = 0
     while (allRemainingNodes.isNotEmpty()) {

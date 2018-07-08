@@ -35,7 +35,7 @@ class HexCoordinate(var x: Int, var y : Int, var z : Int) {
     }
 }
 
-fun part_one(input: List<String>): Int {
+fun partOne(input: List<String>): Int {
     var currentPosition = HexCoordinate(0,0,0)
     input.forEach {
         currentPosition.move(it)
@@ -43,7 +43,7 @@ fun part_one(input: List<String>): Int {
     return currentPosition.distanceToOrigon()
 }
 
-fun part_two(input: List<String>): Int {
+fun partTwo(input: List<String>): Int {
     var maxDistance = -1
     var currentPosition = HexCoordinate(0,0,0)
     input.forEach {

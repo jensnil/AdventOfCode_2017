@@ -1,6 +1,6 @@
 package day_09
 
-fun part_one(input: List<Char>): Int {
+fun partOne(input: List<Char>): Int {
     var depth = 0
     var isCanceled = false
     var isGarbage = false
@@ -26,7 +26,7 @@ fun part_one(input: List<Char>): Int {
     return score
 }
 
-fun part_two(input: List<Char>): Int {
+fun partTwo(input: List<Char>): Int {
     var depth = 0
     var isCanceled = false
     var isGarbage = false

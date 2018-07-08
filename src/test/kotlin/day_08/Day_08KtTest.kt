@@ -2,13 +2,13 @@ package day_08
 
 internal class Day_08KtTest {
     @org.junit.jupiter.api.Test
-    fun part_one() {
-        assert(part_one(get_map()) == 4448)
+    fun partOne() {
+        assert(partOne(get_map()) == 4448)
     }
 
     @org.junit.jupiter.api.Test
-    fun part_two() {
-        assert(part_two(get_map()) == 6582)
+    fun partTwo() {
+        assert(partTwo(get_map()) == 6582)
     }
 
     fun get_map(): List<Instruction> {
