@@ -1,7 +1,7 @@
 package day_03
 
 
-fun part_one(index: Int): Int {
+fun partOne(index: Int): Int {
     val a = Math.sqrt((index - 1).toDouble()).toInt() - 1
     val halfSideLength = a / 2
     val sideLength = halfSideLength * 2 + 1
@@ -17,7 +17,7 @@ fun part_one(index: Int): Int {
     return manhattan
 }
 
-fun part_two(index: Int): Int {
+fun partTwo(index: Int): Int {
     val cells = HashMap<Pair<Int, Int>, Int>()
     var current = Pair(0, 0)
     cells[current] = 1

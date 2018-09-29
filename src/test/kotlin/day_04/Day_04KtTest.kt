@@ -2,14 +2,14 @@ package day_04
 
 internal class Day_04KtTest {
     @org.junit.jupiter.api.Test
-    fun part_one() {
+    fun partOne() {
         val input = input_04.lines().map { it.split(" ") }
-        assert(part_one(input) == 325)
+        assert(partOne(input) == 325)
     }
 
     @org.junit.jupiter.api.Test
-    fun part_two() {
+    fun partTwo() {
         val input = input_04.lines().map { it.split(" ") }
-        assert(part_two(input) == 119)
+        assert(partTwo(input) == 119)
     }
 }

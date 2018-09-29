@@ -1,6 +1,6 @@
 package day_07
 
-fun part_one(input: Map<String, Pair<Int, List<String>>>): String {
+fun partOne(input: Map<String, Pair<Int, List<String>>>): String {
     //var tree = HashMap(input)
     var firstValue: String? = input.keys.first()
     while (true) {
@@ -18,8 +18,8 @@ fun part_one(input: Map<String, Pair<Int, List<String>>>): String {
 
 var diffValue: Int = 0
 
-fun part_two(input: Map<String, Pair<Int, List<String>>>): Int {
-    get_sum(input, part_one(input), 0)
+fun partTwo(input: Map<String, Pair<Int, List<String>>>): Int {
+    get_sum(input, partOne(input), 0)
     return diffValue
 }
 

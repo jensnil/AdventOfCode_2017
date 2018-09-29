@@ -1,7 +1,7 @@
 package day_05
 
 
-fun part_one(input: List<Int>): Int {
+fun partOne(input: List<Int>): Int {
     val instruction = input.toMutableList()
     var ip = 0
     var count = 0
@@ -15,7 +15,7 @@ fun part_one(input: List<Int>): Int {
     return count
 }
 
-fun part_two(input: List<Int>): Int {
+fun partTwo(input: List<Int>): Int {
     val instruction = input.toMutableList()
     var ip = 0
     var count = 0

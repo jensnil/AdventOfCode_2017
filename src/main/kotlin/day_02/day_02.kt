@@ -1,10 +1,10 @@
 package day_02
 
-fun part_one(spreadsheet : List<List<Int>>) : Int {
+fun partOne(spreadsheet : List<List<Int>>) : Int {
     return spreadsheet.map { it ->  (it.max() ?: 0) - (it.min() ?: 0) }.toList().sum()
 }
 
-fun part_two(spreadsheet : List<List<Int>>) : Int {
+fun partTwo(spreadsheet : List<List<Int>>) : Int {
     var sum = 0
     for (row in spreadsheet) {
         start@

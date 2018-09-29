@@ -4,11 +4,11 @@ import lib.knothash
 
 val gridSize = 128
 
-fun part_one(input: String): Int {
+fun partOne(input: String): Int {
     return getGrid(input).joinToString(separator = "").count { it == '1' }
 }
 
-fun part_two(input: String) : Int {
+fun partTwo(input: String) : Int {
     var groupCount = 0
     val grid = getGrid(input)
     var cellVisited = Array(gridSize) { BooleanArray(gridSize) {false} }

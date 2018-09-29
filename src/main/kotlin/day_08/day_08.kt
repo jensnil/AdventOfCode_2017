@@ -3,7 +3,7 @@ package day_08
 data class Instruction(val register : String, val operator : String, val operator1 : Int, val comparatorRegister : String, val comparator : String, val operator2 : Int)
 
 
-fun part_one(input: List<Instruction>): Int {
+fun partOne(input: List<Instruction>): Int {
     var registers = input.map {
         it.register to 0
     }.toMap().toMutableMap()
@@ -35,7 +35,7 @@ fun part_one(input: List<Instruction>): Int {
     return registers.maxBy{ it.value }?.value ?: 0
 }
 
-fun part_two(input: List<Instruction>): Int {
+fun partTwo(input: List<Instruction>): Int {
     var registers = input.map {
         it.register to 0
     }.toMap().toMutableMap()

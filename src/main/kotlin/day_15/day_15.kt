@@ -1,6 +1,6 @@
 package day_15
 
-fun part_one(factorA: Int, factorB: Int): Int {
+fun partOne(factorA: Int, factorB: Int): Int {
     var matchCount = 0
     var generatorA : Long = factorA.toLong()
     var generatorB : Long = factorB.toLong()
@@ -14,7 +14,7 @@ fun part_one(factorA: Int, factorB: Int): Int {
     return matchCount
 }
 
-fun part_two(factorA: Int, factorB: Int) : Int {
+fun partTwo(factorA: Int, factorB: Int) : Int {
     var matchCount = 0
     var generatorA : Long = factorA.toLong()
     var generatorB : Long = factorB.toLong()

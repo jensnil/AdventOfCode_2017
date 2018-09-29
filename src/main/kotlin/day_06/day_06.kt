@@ -3,7 +3,7 @@ package day_06
 import lib.circular
 
 
-fun part_one(input: List<Int>): Int {
+fun partOne(input: List<Int>): Int {
     var counter = 0
     val currentState = input.toMutableList().circular()
     var previousLists = HashSet<String>()
@@ -20,7 +20,7 @@ fun part_one(input: List<Int>): Int {
     return counter
 }
 
-fun part_two(input: List<Int>): Int {
+fun partTwo(input: List<Int>): Int {
     var counter = 0
     val currentState = input.toMutableList().circular()
     var previousLists = HashMap<String, Int>()
